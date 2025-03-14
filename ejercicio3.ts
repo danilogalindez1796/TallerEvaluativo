@@ -1,4 +1,10 @@
-interface CiudadTemperatura {
+const ciudades = [
+    { ciudad: "Madrid", temperatura: 25 },
+    { ciudad: "Medellin", temperatura: 15 },
+    { ciudad: "Barranquilla", temperatura: 30 },
+    { ciudad: "Bogota", temperatura: 10 }
+  ];
+  interface CiudadTemperatura {
     ciudad: string;
     temperatura: number;
   }
@@ -28,12 +34,6 @@ interface CiudadTemperatura {
       promedioTemperatura
     };
   };
-    const ciudades = [
-    { ciudad: "Madrid", temperatura: 25 },
-    { ciudad: "Medellin", temperatura: 15 },
-    { ciudad: "Barranquilla", temperatura: 30 },
-    { ciudad: "Bogota", temperatura: 10 }
-  ];
   const resultado = analizarTemperaturas(ciudades);
   console.log(resultado);
   
