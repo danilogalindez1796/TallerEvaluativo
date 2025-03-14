@@ -11,7 +11,7 @@ const calcularIMC = (peso: number, altura: number) => {
     } else {
       categoria = "Obesidad";
     }
-    return `Tu IMC es ${imc.toFixed(2)} y tu categoría es: ${categoria}`;
+    return `Tu IMC es ${imc} y tu categoría es: ${categoria}`;
   };
   console.log(calcularIMC(70, 1.75));
     
